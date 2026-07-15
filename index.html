@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Portal</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <div id="modal" style="display:none;">
+  <div id="modalBox">
+    <h2 id="modalTitle"></h2>
+    <p id="modalCompany"></p>
+    <p id="modalLocation"></p>
+    <p id="modalType"></p>
+    <input type="text" id="applicantName" placeholder="Your Name">
+    <input type="email" id="applicantEmail" placeholder="Your Email">
+    <button id="submitBtn">Submit Application</button>
+    <button id="closeBtn">Close</button>
+  </div>
+</div>
+  <body>
+
+    <nav>
+      <h1>JobFinder</h1>
+      <ul>
+        <li>Home</li>
+        <li>Jobs</li>
+        <li>Login</li>
+      </ul>
+    </nav>
+
+    <section id="hero">
+      <h2>Find Your Dream Job</h2>
+      <p>Thousands of opportunities waiting for you</p>
+      <input type="text" id="searchBar" placeholder="Search jobs...">
+      <button id="searchBtn">Search</button>
+    </section>
+
+    <section id="jobListings">
+      <h2>Latest Jobs</h2>
+      <div id="filters">
+  <button class="filterBtn" data-type="All">All</button>
+  <button class="filterBtn" data-type="Full Time">Full Time</button>
+  <button class="filterBtn" data-type="Part Time">Part Time</button>
+  <button class="filterBtn" data-type="Remote">Remote</button>
+</div>
+      <div id="jobContainer"></div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
